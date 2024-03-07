@@ -1,0 +1,58 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PersistentStorage" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="textInputStyle">@style/Widget.PersistentStorage.TextInputLayout</item>
+        <item name="toolbarStyle">@style/Widget.PersistentStorage.Toolbar</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.PersistentStorage.BottomSheetDialog</item>
+    </style>
+
+    <style name="Theme.PersistentStorage" parent="Base.Theme.PersistentStorage" />
+
+    <style name="Widget.PersistentStorage.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.PersistentStorage.TextInput</item>
+        <item name="boxBackgroundColor">?attr/colorSurface</item>
+    </style>
+
+    <style name="ThemeOverlay.PersistentStorage.TextInput" parent="">
+        <item name="editTextStyle">@style/Widget.Material3.TextInputEditText.OutlinedBox</item>
+    </style>
+
+    <style name="Widget.PersistentStorage.Toolbar" parent="Widget.Material3.Toolbar.Surface">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.PersistentStorage.Toolbar</item>
+    </style>
+
+    <style name="Widget.PersistentStorage.Button" parent="Widget.Material3.Button">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.PersistentStorage.Button</item>
+    </style>
+
+    <style name="ThemeOverlay.PersistentStorage.Button" parent="ThemeOverlay.Material3.Button">
+        <item name="colorContainer">?attr/colorPrimary</item>
+        <item name="colorOnContainer">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Widget.PersistentStorage.OutlinedButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.PersistentStorage.OutlinedButton</item>
+    </style>
+
+    <style name="ThemeOverlay.PersistentStorage.OutlinedButton" parent="ThemeOverlay.Material3.Button">
+        <item name="colorContainer">?attr/colorOnPrimary</item>
+        <item name="colorOnContainer">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Widget.PersistentStorage.BottomSheetDialog" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">?attr/colorPrimaryContainer</item>
+    </style>
+
+    <style name="ThemeOverlay.PersistentStorage.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.PersistentStorage.BottomSheetDialog</item>
+    </style>
+
+    <style name="ThemeOverlay.PersistentStorage.Toolbar" parent="">
+        <item name="iconTint">?attr/colorOnPrimary</item>
+        <item name="colorSurface">?attr/colorPrimary</item>
+        <item name="colorOnSurface">?attr/colorOnPrimary</item>
+        <item name="colorControlNormal">?attr/colorOnPrimary</item>
+    </style>
+</resources>
