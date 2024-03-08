@@ -11,8 +11,7 @@
     <string name="title">User data</string>
     <string name="no_id">You must enter a valid user ID</string>
     <string name="address_two_lines">%1s %2s\n%3s %4s</string>
-    <string name="no_result">It was not possible to complete the requested operation.</string>
-    <string name="unexpected">An unexpected problme occurred.</string>
+    <string name="unexpected">An unexpected problem occurred.</string>
     <string name="settings">Settings</string>
     <string name="display_all">Display all the user\'s data</string>
     <string name="title_new_user">New user</string>
@@ -23,4 +22,5 @@
     <string name="city">City</string>
     <string name="empty_name">You must provide, at least, the user\'s name.</string>
     <string name="suite">Suite</string>
+    <string name="no_user">There is no user with that ID in the database.</string>
 </resources>

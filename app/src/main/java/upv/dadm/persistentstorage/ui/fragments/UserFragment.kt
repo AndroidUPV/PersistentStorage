@@ -11,7 +11,6 @@ import androidx.core.view.MenuProvider
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
@@ -21,10 +20,9 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import upv.dadm.persistentstorage.R
 import upv.dadm.persistentstorage.databinding.FragmentUserBinding
-import upv.dadm.persistentstorage.model.User
 import upv.dadm.persistentstorage.ui.viewmodels.SettingsViewModel
 import upv.dadm.persistentstorage.ui.viewmodels.UserViewModel
-import java.io.IOException
+import upv.dadm.persistentstorage.utils.NoUserException
 
 @AndroidEntryPoint
 class UserFragment : Fragment(R.layout.fragment_user), MenuProvider {
@@ -92,7 +90,7 @@ class UserFragment : Fragment(R.layout.fragment_user), MenuProvider {
                     if (throwable != null) {
                         displayMessage(
                             when (throwable) {
-                                is IOException -> R.string.no_result
+                                is NoUserException -> R.string.no_user
                                 else -> R.string.unexpected
                             }
                         )
