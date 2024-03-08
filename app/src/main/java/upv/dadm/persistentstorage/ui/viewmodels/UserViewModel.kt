@@ -13,9 +13,11 @@ class UserViewModel @Inject constructor(
 
 ) : ViewModel() {
 
+    // User information
     private val _user = MutableStateFlow<User?>(null)
     val user = _user.asStateFlow()
 
+    // Denotes some problem
     private val _throwable = MutableStateFlow<Throwable?>(null)
     val throwable = _throwable.asStateFlow()
 

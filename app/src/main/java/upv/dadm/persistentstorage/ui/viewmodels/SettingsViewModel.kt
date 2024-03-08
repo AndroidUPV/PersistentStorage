@@ -12,6 +12,7 @@ class SettingsViewModel @Inject constructor(
 
 ) : ViewModel() {
 
+    // Display all user data
     private val _isDisplayAll = MutableStateFlow(false)
     val isDisplayAll = _isDisplayAll.asStateFlow()
 
